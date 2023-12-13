@@ -17,6 +17,13 @@ class _NewPageState extends State<NewPage> {
       builder: (context){
         return AlertDialog(
           title: Text('tapped list button :'),
+          actions: <Widget>[
+            TextButton(
+              onPressed: (){
+                Navigator.of(context).pop();
+              }, 
+              child: Text('Close'))
+          ],
         );
     });
   }
