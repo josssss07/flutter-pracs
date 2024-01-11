@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:prac5/pages/bmipage.dart';
+import 'package:prac5/pages/emipage.dart';
+import 'package:prac5/pages/rectangle.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
