@@ -57,7 +57,20 @@ class HomePage extends StatelessWidget {
                   Text('Xaviers.ac site (why?)')
                 ],
               ),
-            )
+            ),
+            ElevatedButton(
+              onPressed: () {
+              
+              },
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Icon(Icons.calculate_rounded),
+                  Text('BMI Calculator')
+                ],
+              ),
+            ),
           ],
         ),
       ),
