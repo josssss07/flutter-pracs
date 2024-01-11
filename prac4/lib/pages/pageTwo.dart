@@ -13,21 +13,29 @@ class _PageTwoState extends State<PageTwo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("page two"),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Column(children: <Widget>[
-          Text('Body Mass Index Calculator:'),
-          Row(
-            children: <Widget>[
-              Text("add your Height in Meters:  "),
-              
-            ],
-          )
-        ],),
-      )
-    );
+        appBar: AppBar(
+          title: Text("page two"),
+          centerTitle: true,
+        ),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Center(
+            child: Column(
+              children: <Widget>[
+                Text('Body Mass Index Calculator:'),
+                Row(
+                  children: <Widget>[
+                    Text("add your Height in Meters:  "),
+                  ],
+                ),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                    child: Text('home-screen'))
+              ],
+            ),
+          ),
+        ));
   }
 }
