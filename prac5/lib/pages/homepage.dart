@@ -10,31 +10,38 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Stuff Calcuator'),
+        title: const Text('Stuff Calcuator'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(8),
+        padding: const EdgeInsets.all(8),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-              ElevatedButton(onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => RectanglePage()),
-                );
-              }, child: Text("area of Rectangle")),
-              ElevatedButton(onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => EMIPage()),
-                );
-              }, child: Text("area of Rectangle")),
-              ElevatedButton(onPressed: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => BMIPage()),
-                );
-              }, child: Text("area of Rectangle")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const RectanglePage()),
+                  );
+                },
+                child: const Text("area of Rectangle")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const EMIPage()),
+                  );
+                },
+                child: const Text("calculate EMI")),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (_) => const BMIPage()),
+                  );
+                },
+                child: const Text("calculate BMI")),
           ],
         ),
       ),
